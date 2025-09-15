@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+
+    <div class="card shadow-lg border-0 mb-4 text-center">
+      <div class="card-body p-5">
+        <h3 class="fw-bold mb-3">Final Proficiency Score</h3>
+        <div class="display-4 fw-bold text-{{ alert }}">
+          {{ avg }}/5
+        </div>
+        <p class="lead text-secondary">{{ band }} Level</p>
+        <div class="progress mt-3" style="height: 20px;">
+          <div class="progress-bar bg-{{ alert }}" role="progressbar" 
+               style="width: {{ (avg/5)*100 }}%;" 
+               aria-valuenow="{{ avg }}" aria-valuemin="0" aria-valuemax="5"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion mb-4" id="questionsAccordion">
+      {% for q in questions %}
+      {% set ev = evaluations.get(q.id, {}) %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{ loop.index }}">
+          <button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse{{ loop.index }}"
+                  aria-expanded="{{ 'true' if loop.first else 'false' }}"
+                  aria-controls="collapse{{ loop.index }}">
+            Q{{ loop.index }}: {{ q.question }}
+          </button>
+        </h2>
+        <div id="collapse{{ loop.index }}" 
+             class="accordion-collapse collapse {% if loop.first %}show{% endif %}" 
+             aria-labelledby="heading{{ loop.index }}" 
+             data-bs-parent="#questionsAccordion">
+          <div class="accordion-body">
+            <p><strong>Topic:</strong> {{ q.topic }} | <strong>Difficulty:</strong> {{ q.difficulty }}</p>
+            <p><strong>Your Answer:</strong></p>
+            <pre class="bg-light p-2 rounded">{{ answers.get(q.id, '') }}</pre>
+            <p><span class="badge bg-primary">Score: {{ ev.get('score',0) }}/5</span></p>
+            <p><strong>Feedback:</strong> {{ ev.get('rationale','') }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+      <div class="card-body text-center">
+        <h5 class="mb-3">📂 Transcript & Report</h5>
+        <p class="text-muted mb-3">
+          Saved : <code>{{ ts }}</code>  <code></code>.
+        </p>
+        <a class="btn btn-dark btn-sm" href="{{ url_for('core.intro') }}">🔁 Restart Interview</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
