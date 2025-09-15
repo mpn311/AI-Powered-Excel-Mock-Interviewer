@@ -1,0 +1,5 @@
+Overall: 0.0/5 (Needs Improvement)
+- EXL001: The candidate did not answer the question.  The response "i dont know" demonstrates a complete lack of understanding of relative and absolute cell referencing, a fundamental Excel skill.
+- EXL002: The candidate responded with 'i dont know', indicating a complete lack of understanding of PivotTables in Excel.  They did not provide any steps for creation or explain the function of the Values area.
+- EXL003: The candidate responded with 'i dont know', indicating a complete lack of knowledge on a fundamental Excel feature.  They did not demonstrate any practical application knowledge of conditional formatting or average calculations within Excel.
+- EXL004: The candidate did not provide any answer, demonstrating a lack of understanding of VLOOKUP and its limitations.  No scenario, limitations, or alternative functions were mentioned.

@@ -1,0 +1,5 @@
+Overall: 0.0/5 (Needs Improvement)
+- EXL001: The candidate did not demonstrate any understanding of relative or absolute cell references in Excel.
+- EXL002: The candidate responded with 'i dont know', demonstrating a complete lack of understanding of PivotTables in Excel.  They did not provide any steps for creation or describe the function of the Values area.
+- EXL003: The candidate responded with 'i dont know', indicating a complete lack of knowledge on a fundamental Excel feature.  No steps towards solving the problem were provided.
+- EXL004: The candidate did not provide any answer, demonstrating a complete lack of understanding of VLOOKUP and its limitations.  No scenario was presented, and no alternative function was suggested.

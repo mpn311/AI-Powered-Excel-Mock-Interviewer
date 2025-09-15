@@ -1,0 +1,17 @@
+Q: Explain the difference between an absolute and a relative cell reference in Excel, and provide an example of when you would use each.
+A: Relative reference (A1): Changes when copied (e.g., =A1+B1 copied to next row becomes =A2+B2). Use when you want formulas to adjust dynamically.  
+Absolute reference ($A$1): Stays fixed when copied (e.g., =$A$1+B1 copied to next row becomes =$A$1+B2). Use when you always need to refer to the same cell (like a tax rate or exchange rate).
+Score: 4.0
+
+Q: Describe the steps to create a basic PivotTable in Excel, and explain the purpose of the 'Values' area within a PivotTable.
+A: Steps: Select data → Insert → PivotTable → Choose fields. Drag fields to Rows (categories), Columns (grouping), Values (calculations), Filters (global filter).  
+Purpose of 'Values': It holds the metrics you want to calculate (e.g., Sum of Sales, Count of Orders, Average Revenue). Without Values, the PivotTable shows structure but no summarized data.
+Score: 4.0
+
+Q: You have a list of sales figures. How would you quickly highlight all sales that are above the average using Conditional Formatting?
+A: i dont know
+Score: 0.0
+
+Q: Explain a scenario where VLOOKUP is a useful function. What are its limitations, and what modern function might you use instead to overcome these limitations?
+A: i dont know
+Score: 0.0

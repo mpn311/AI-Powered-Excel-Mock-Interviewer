@@ -1,0 +1,5 @@
+Overall: 1.0/5 (Needs Improvement)
+- EXL001: The candidate demonstrates a good understanding of relative and absolute cell references, correctly explaining their behavior when copied.  The examples provided are also appropriate. However, the explanation lacks the nuance of explaining how to create mixed references (e.g., $A1 or A$1) which would improve the overall answer.  The response is concise and to the point, but a more complete understanding would include the mixed reference types and their applications.
+- EXL002: The candidate responded with 'i dont know', demonstrating a complete lack of understanding of PivotTables in Excel.  They did not provide any steps for creating a PivotTable or explain the function of the 'Values' area.
+- EXL003: The candidate did not demonstrate any knowledge of how to use conditional formatting in Excel to highlight values above average.  Their response indicates a complete lack of practical application knowledge.
+- EXL004: The candidate did not provide any answer to the question.
