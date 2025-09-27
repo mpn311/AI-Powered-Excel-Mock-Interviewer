@@ -62,11 +62,6 @@ It helps organizations **automate and standardize Excel skill assessments**, red
 - **Traceability:** Every interview run can be replayed (inputs, model outputs, score, rubric).  
 - **Offline analysis:** Simple local JSONL is easy to mine for QA and model prompt improvements.  
 
-## 7) Hosting — AWS EC2
-**Why this?**  
-- **Full control:** You own the box; easy to tune system dependencies (imagemagick, ffmpeg, etc. if later needed).  
-- **Predictable pricing:** Good for steady loads; simpler than managed PaaS when you already know Linux basics.  
-
 ---
 
 ## 📂 Project Structure
@@ -102,7 +97,6 @@ Since no dataset exists initially:
 ## 📑 Deliverables
 - ✅ Design Document & Approach Strategy (`.docx`)  
 - ✅ Flask-based Proof-of-Concept app  
-- ✅ Deployed version (AWS EC2)  
 - ✅ Sample transcripts & feedback in `/logs`  
 
 ---
