@@ -52,7 +52,7 @@ It helps organizations **automate and standardize Python skill assessments**, re
 - **Fast to ship:** Grid, forms, buttons, modals out-of-the-box → you focus on core logic.  
 - **Consistent & accessible:** Good default a11y and responsive behavior for dashboards and forms.  
 
-## 5) Storage — JSON Question Bank (`excel_questions.json`)
+## 5) Storage — JSON Question Bank (`questions.json`)
 **Why this?**  
 - **Human-editable & versionable:** Non-tech stakeholders can update questions/rubrics via PRs.  
 - **Zero ops:** No DB admin required for early stages.  
