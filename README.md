@@ -1,4 +1,4 @@
-# AI-Powered Excel Mock Interviewer
+# AI-Powered Python Mock Interviewer
 
 ## 🚀 Project Overview
 The **AI-Powered Python Mock Interviewer** is a web-based application that simulates Python technical interviews, evaluates candidate responses, and generates professional feedback reports.  
