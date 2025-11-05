@@ -19,7 +19,7 @@ It helps organizations **automate and standardize Python skill assessments**, re
 ## 🏗️ Technical Architecture
 **Flow:**
 1. Candidate enters profile (name, experience).  
-2. Questions loaded dynamically from `data/excel_questions.json`.  
+2. Questions loaded dynamically from `data/python_questions.json`.  
 3. Candidate answers → evaluated by Gemini LLM with expected answer + rubric.  
 4. LLM outputs strict JSON `{score, rationale}`.  
 5. Scores + rationale stored in session.  
@@ -87,8 +87,8 @@ excel-mock-interviewer/
 
 ## ❄️ Cold Start Strategy
 Since no dataset exists initially:
-1. **Bootstrapping** – Use curated `excel_questions.json` with expert-written expected answers & evaluation criteria.  
-2. **Iterative Improvement** – Log transcripts & reports → review by Excel experts → refine prompts.  
+1. **Bootstrapping** – Use curated `questions.json` with expert-written expected answers & evaluation criteria.  
+2. **Iterative Improvement** – Log transcripts & reports → review by python experts → refine prompts.  
 3. **Dataset Building** – Collect anonymized transcripts for fine-tuning.  
 4. **Future Optimization** – Fine-tune smaller LLMs  
 
